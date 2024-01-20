@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,9 @@
     <!-- daisy_cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font_awesome_kit -->
+    <script src="https://kit.fontawesome.com/7a1a92cae3.js" crossorigin="anonymous"></script>
 
     <!-- tailwind_custom_color -->
     <script>
@@ -39,11 +42,45 @@
 
 <body class="font-manrope">
     <!-- header_start -->
-    <header></header>
+    <header class="container mx-auto py-4 lg:py-16">
+        <!-- nav_start -->
+        <!-- nav_end -->
+
+
+        <!-- banner_start -->
+        <div class="hero">
+            <div class="hero-content flex-col lg:gap-12 lg:flex-row">
+              <div>
+                <h1 class="text-4xl lg:text-7xl font-extrabold lg:leading-[100px]">It's good <br>
+                    tea time at The <br>Tea House</h1>
+                <p class="py-6 text-[#777] text-lg font-medium leading-7">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary">Explore More</button>
+              </div>
+
+              <div class="lg:mt-28">
+                <img src="./images/banner.png" class="max-w-sm lg:max-w-xl"/>
+                <div class="-mt-16 lg:-mt-24 -ml-10 lg:ml-14 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60 rounded-lg">
+                    <i class="fa-solid fa-star text-4xl" style="color: #FFD43B;"></i>
+                    <div>
+                        <h3 class="text-[#1C1C1C] text-3xl font-extrabold">5.00</h3>
+                        <p class="text-[#777] font-semibold mt-1">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- banner_end -->
+    </header>
     <!-- header_end -->
 
     <!-- main_start -->
-    <main></main>
+    <main class="container mx-auto mt-16 px-4 lg:px-0">
+        <!-- feature_section -->
+        <section class="text-center">
+            <h3 class="text-[#1C1C1C] text-4xl lg:text-5xl font-extrabold">Our Featured Products</h3>
+            <p class="text-[#777] font-medium mt-2 lg:mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br>by injected humour, or randomised words which don't look even slightly believable. </p>
+        </section>
+    </main>
     <!-- main_end -->
 
     <!-- footer_start -->
