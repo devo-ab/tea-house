@@ -5,20 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tea House</title>
-  <link rel="shortcut icon" href="./icon/tea-house.png" type="image/x-icon">
+  <!-- link favicon -->
+  <link rel="shortcut icon" href="./assets/icon/tea-house.png" type="image/x-icon">
+  <!-- link favicon -->
 
   <!-- google_font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
+  <!-- google_font -->
 
-  <!-- daisy_cdn -->
+  <!-- daisy_cdn & tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy_cdn & tailwind -->
 
   <!-- font_awesome_kit -->
   <script src="https://kit.fontawesome.com/7a1a92cae3.js" crossorigin="anonymous"></script>
+  <!-- font_awesome_kit -->
 
   <!-- tailwind_custom_color -->
   <script>
@@ -42,15 +47,17 @@
 
 <body class="font-manrope">
   <!-- nav_start -->
-  <div class="navbar bg-base-100 container mx-auto">
+  <div class="navbar bg-base-100 max-w-7xl mx-auto">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
         </div>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>Homepage</a></li>
-          <li><a>Choose You Tea</a></li>
+          <li><a>Home Page</a></li>
+          <li><a>Choose Your Tea</a></li>
           <li><a>About</a></li>
         </ul>
       </div>
@@ -60,36 +67,41 @@
     </div>
     <div class="navbar-end">
       <button class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
       </button>
       <button class="btn btn-ghost btn-circle">
         <div class="indicator">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
           <span class="badge badge-xs badge-primary indicator-item"></span>
         </div>
       </button>
     </div>
   </div>
   <!-- nav_end -->
+
   <!-- header_start -->
-  <header class="container mx-auto py-4 lg:py-16">
-    <!-- nav_start -->
-    <!-- nav_end -->
-
-
+  <header class="max-w-7xl mx-auto py-4 lg:py-16">
     <!-- banner_start -->
     <div class="">
-      <div class=" flex justify-between flex-col lg:gap-12 lg:flex-row px-4">
+      <div class="flex justify-between flex-col lg:gap-12 md:flex-row px-4">
         <div>
           <h1 class="text-4xl lg:text-7xl font-extrabold lg:leading-[100px]">It's good <br>
             tea time at The <br>Tea House</h1>
           <p class="py-6 text-[#777] text-lg font-medium leading-7">Tea and Botanical Solutions Supplier Give Optimum
-            <br>Satisfaction To Your Taste Buds.</p>
-          <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-white ">Explore More <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></button>
+            <br>Satisfaction To Your Taste Buds.
+          </p>
+          <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-white ">Explore More <i
+              class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></button>
         </div>
 
         <div class="lg:mt-16">
-          <img src="./images/banner.png" class="max-w-sm lg:max-w-xl" />
+          <img src="./assets/images/banner.png" class="max-w-sm lg:max-w-xl" />
           <div
             class="-mt-16 lg:-mt-24 -ml-10 lg:ml-14 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60 rounded-lg">
             <i class="fa-solid fa-star text-4xl" style="color: #FFD43B;"></i>
@@ -106,7 +118,7 @@
   <!-- header_end -->
 
   <!-- main_start -->
-  <main class="container mx-auto mt-16 px-4 lg:px-0">
+  <main class="max-w-7xl mx-auto mt-16 px-4 lg:px-0">
     <!-- feature_section_start -->
     <section class="text-center">
       <h3 class="text-[#1C1C1C] text-4xl lg:text-5xl font-extrabold">Our Featured Products</h3>
@@ -118,7 +130,7 @@
       <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-4 lg:my-0 mt-8 lg:mt-12">
         <!-- first_card -->
         <div class="card bg-[#F4F4F4] shadow-xl pt-4">
-          <figure><img src="./images/tea-1.png" alt="Shoes" /></figure>
+          <figure><img src="./assets/images/tea-1.png" alt="Shoes" /></figure>
           <div class="card-body text-center">
             <h2 class=" text-2xl text-[#1C1C1C] font-extrabold">Milk Tea</h2>
             <p class="text-[#777] font-semibold max-w-52 mx-auto">Creamer could be replaced by fresh milk</p>
@@ -127,7 +139,7 @@
 
         <!-- second_card -->
         <div class="card bg-[#F4F4F4] shadow-xl pt-4">
-          <figure><img src="./images/tea-2.png" alt="Shoes" /></figure>
+          <figure><img src="./assets/images/tea-2.png" alt="Shoes" /></figure>
           <div class="card-body text-center">
             <h2 class=" text-2xl text-[#1C1C1C] font-extrabold">Black Tea</h2>
             <p class="text-[#777] font-semibold max-w-52 mx-auto">Creamer could be replaced by fresh milk</p>
@@ -136,7 +148,7 @@
 
         <!-- third_card -->
         <div class="card bg-[#F4F4F4] shadow-xl pt-4">
-          <figure><img src="./images/tea-3.png" alt="Shoes" /></figure>
+          <figure><img src="./assets/images/tea-3.png" alt="Shoes" /></figure>
           <div class="card-body text-center">
             <h2 class=" text-2xl text-[#1C1C1C] font-extrabold">Lemon Tea</h2>
             <p class="text-[#777] font-semibold max-w-52 mx-auto">Creamer could be replaced by fresh milk</p>
@@ -145,7 +157,7 @@
 
         <!-- fourth_card -->
         <div class="card bg-[#F4F4F4] shadow-xl pt-4">
-          <figure><img src="./images/tea-4.png" alt="Shoes" /></figure>
+          <figure><img src="./assets/images/tea-4.png" alt="Shoes" /></figure>
           <div class="card-body text-center">
             <h2 class=" text-2xl text-[#1C1C1C] font-extrabold">Green Tea</h2>
             <p class="text-[#777] font-semibold max-w-52 mx-auto">Creamer could be replaced by fresh milk</p>
@@ -157,16 +169,16 @@
     <!-- feature_section_end -->
 
     <!-- great_tea_start -->
-    <section class="mt-28 flex gap-12 flex-col lg:flex-row">
-      <div class="grid gap-8 grid-cols-1 lg:grid-cols-2 flex-1">
+    <section class="mt-28 flex gap-12 flex-col md:flex-row">
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
         <div class="rounded-xl h-36 bg-gradient-to-r from-[#F00] to-[#FF8938] opacity-10"></div>
 
         <div class="row-span-2 rounded-xl bg-[#E6A6231A] px-8 pt-12 pb-6 flex justify-center items-center">
-          <img src="./images/fresh-1.png" alt="">
+          <img src="./assets/images/fresh-1.png" alt="">
         </div>
 
         <div class="row-span-2 rounded-xl bg-[#574E391A] px-8 pt-12 pb-6 flex justify-center items-center">
-          <img src="./images/fresh-2.png" alt="">
+          <img src="./assets/images/fresh-2.png" alt="">
         </div>
 
         <div class="rounded-xl h-36 bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF]"></div>
@@ -192,10 +204,10 @@
 
     <!-- customer_review_start -->
     <section
-      class="mt-28 flex flex-col lg:flex-row gap-14 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00]  lg:px-[70px] pt-5 lg:pt-[110px] pb-[85px] justify-between">
+      class="mt-28 flex flex-col md:flex-row gap-14 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] md:px-10 lg:px-[70px] pt-5 lg:pt-[110px] pb-4  md:pb-2 lg:pb-[85px] justify-between">
       <div class=" px-2 lg:px-0 flex items-center">
         <div>
-          <h1 class="text-[#F4F4F4] text-4xl lg:text-5xl font-extrabold">Meet Our Super <br>Clients</h1>
+          <h1 class="text-[#F4F4F4] text-4xl md:text-5xl font-extrabold">Meet Our Super <br>Clients</h1>
           <p class="text-[#F4F4F4] font-medium mt-5 leading-7 max-w-[440px]">There are many variations of passages of
             Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
             randomised words which don't look even slightly believable. </p>
@@ -208,7 +220,7 @@
       <div class="relative px-5 lg:px-0">
         <!-- next_review -->
         <div class="relative opacity-50 z-10 mb-[55px] lg:max-w-[376px] p-10 rounded-lg bg-white">
-          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./person/client.png"
+          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./assets/person/client.png"
             alt="">
           <p class="text-[#777] leading-7">We are providing the best and suitable home insurance services for the people
             who are interested to treatment</p>
@@ -218,13 +230,13 @@
           <p class="mt-2 #5D5A6F font-medium leading-7">Businessman</p>
 
           <div class="flex justify-end">
-            <img src="./icon/circles.png" alt="">
+            <img src="./assets/icon/circles.png" alt="">
           </div>
         </div>
 
         <!-- current_review -->
         <div class="absolute  top-[150px] lg:-left-32 z-20 lg:max-w-[430px] p-10 rounded-lg bg-white">
-          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./person/client.png"
+          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./assets/person/client.png"
             alt="">
           <p class="text-[#777] leading-7">We are providing the best and suitable home insurance services for the people
             who are interested to treatment</p>
@@ -234,13 +246,13 @@
           <p class="mt-2 #5D5A6F font-medium leading-7">Businessman</p>
 
           <div class="flex justify-end">
-            <img src="./icon/circles.png" alt="">
+            <img src="./assets/icon/circles.png" alt="">
           </div>
         </div>
 
         <!-- previous_review -->
         <div class="relative opacity-50 z-10 lg:w-[376px] p-10 rounded-lg bg-white">
-          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./person/client.png"
+          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./assets/person/client.png"
             alt="">
           <p class="text-[#777] leading-7">We are providing the best and suitable home insurance services for the people
             who are interested to treatment</p>
@@ -250,7 +262,7 @@
           <p class="mt-2 #5D5A6F font-medium leading-7">Businessman</p>
 
           <div class="flex justify-end">
-            <img src="./icon/circles.png" alt="">
+            <img src="./assets/icon/circles.png" alt="">
           </div>
         </div>
       </div>
@@ -264,11 +276,11 @@
         Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
         words which don't look even slightly believable. </p>
 
-      <div class="mt-12  text-left flex gap-6 flex-col lg:flex-row">
+      <div class="mt-12  text-left flex gap-6 flex-col md:flex-row">
         <!-- first-card -->
         <div class="card card-compact border border-[#D2D2D2] bg-white shadow-xl p-5">
           <figure>
-            <img src="./images/news-1.png" alt="Shoes" />
+            <img src="./assets/images/news-1.png" alt="Shoes" />
           </figure>
 
           <div class="card-body">
@@ -283,7 +295,7 @@
         <!-- second-card -->
         <div class="card card-compact border border-[#D2D2D2] bg-white shadow-xl p-5">
           <figure>
-            <img src="./images/news-2.png" alt="Shoes" />
+            <img src="./assets/images/news-2.png" alt="Shoes" />
           </figure>
 
           <div class="card-body">
@@ -298,7 +310,7 @@
         <!-- third-card -->
         <div class="card card-compact border border-[#D2D2D2] bg-white shadow-xl p-5">
           <figure>
-            <img src="./images/news-3.png" alt="Shoes" />
+            <img src="./assets/images/news-3.png" alt="Shoes" />
           </figure>
 
           <div class="card-body">
@@ -319,11 +331,12 @@
   <footer class="px-8 bg-[#FF89381A] lg:px-40 py-10 lg:py-24 bg-base-200 text-base-content mt-28">
 
     <div class="flex justify-between items-center">
-      <img src="./icon/cup.png" alt="">
+      <img src="./assets/icon/cup.png" alt="">
 
       <p class="ml-16 lg:ml-0">
         <span class="text-[#494949] text-xl font-medium leading-10">Ready to get started?</span>
-        <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#FFF] text-xl font-bold lg:ml-9">Get Started</button>
+        <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#FFF] text-xl font-bold lg:ml-9">Get
+          Started</button>
       </p>
     </div>
 
@@ -360,7 +373,8 @@
         <fieldset class="form-control w-80">
           <div class="join">
             <input type="text" placeholder="Email address" class="bg-transparent border-b-2 border-[#494949]" />
-            <button class="btn ml-5 bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-full"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+            <button class="btn ml-5 bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-full"><i
+                class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
           </div>
         </fieldset>
       </form>
