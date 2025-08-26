@@ -102,8 +102,7 @@
 
         <div class="lg:mt-16">
           <img src="./assets/images/banner.png" class="max-w-sm lg:max-w-xl" />
-          <div
-            class="-mt-16 lg:-mt-24 -ml-10 lg:ml-14 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60 rounded-lg">
+          <div class="-mt-16 lg:-mt-24  lg:ml-14 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60 rounded-lg">
             <i class="fa-solid fa-star text-4xl" style="color: #FFD43B;"></i>
             <div>
               <h3 class="text-[#1C1C1C] text-3xl font-extrabold">5.00</h3>
@@ -220,8 +219,8 @@
       <div class="relative px-5 lg:px-0">
         <!-- next_review -->
         <div class="relative opacity-50 z-10 mb-[55px] lg:max-w-[376px] p-10 rounded-lg bg-white">
-          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./assets/person/client.png"
-            alt="">
+          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white"
+            src="./assets/person/client.png" alt="">
           <p class="text-[#777] leading-7">We are providing the best and suitable home insurance services for the people
             who are interested to treatment</p>
 
@@ -236,8 +235,8 @@
 
         <!-- current_review -->
         <div class="absolute  top-[150px] lg:-left-32 z-20 lg:max-w-[430px] p-10 rounded-lg bg-white">
-          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./assets/person/client.png"
-            alt="">
+          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white"
+            src="./assets/person/client.png" alt="">
           <p class="text-[#777] leading-7">We are providing the best and suitable home insurance services for the people
             who are interested to treatment</p>
 
@@ -252,8 +251,8 @@
 
         <!-- previous_review -->
         <div class="relative opacity-50 z-10 lg:w-[376px] p-10 rounded-lg bg-white">
-          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white" src="./assets/person/client.png"
-            alt="">
+          <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white"
+            src="./assets/person/client.png" alt="">
           <p class="text-[#777] leading-7">We are providing the best and suitable home insurance services for the people
             who are interested to treatment</p>
 
@@ -328,62 +327,92 @@
   <!-- main_end -->
 
   <!-- footer_start -->
-  <footer class="px-8 bg-[#FF89381A] lg:px-40 py-10 lg:py-24 bg-base-200 text-base-content mt-28">
+  <footer class="px-6 sm:px-10 lg:px-40 py-10 lg:py-24 bg-[#FF89381A] text-base-content mt-28">
 
-    <div class="flex justify-between items-center">
-      <img src="./assets/icon/cup.png" alt="">
+    <!-- Top Section -->
+    <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
+      <img src="./assets/icon/cup.png" alt="" class="w-16 h-16">
 
-      <p class="ml-16 lg:ml-0">
-        <span class="text-[#494949] text-xl font-medium leading-10">Ready to get started?</span>
-        <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#FFF] text-xl font-bold lg:ml-9">Get
-          Started</button>
-      </p>
+      <div class="text-center lg:text-left">
+        <span class="text-[#494949] text-xl font-medium block mb-4">Ready to get started?</span>
+        <button
+          class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#FFF] text-xl font-bold rounded-full px-6 py-2">
+          Get Started
+        </button>
+      </div>
     </div>
 
-    <div class="footer mt-20">
+    <!-- Footer Navigation -->
+    <div class="footer grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mt-20">
+
+      <!-- Quick Links -->
       <nav>
-        <header class="text-[#1C1C1C] text-xl font-semibold">Quick Links</header>
-        <a class="link link-hover text-[#494949]">Home</a>
-        <a class="link link-hover text-[#494949]">About Us</a>
-        <a class="link link-hover text-[#494949]">Insurance</a>
-        <a class="link link-hover text-[#494949]">Privacy Policy</a>
-      </nav>
-      <nav>
-        <header class="text-[#1C1C1C] text-xl font-semibold">Our Service</header>
-        <a class="link link-hover text-[#494949]">Life Insurance</a>
-        <a class="link link-hover text-[#494949]">Car Insurance</a>
-        <a class="link link-hover text-[#494949]">Health Insurance</a>
-        <a class="link link-hover text-[#494949]">House Insurance</a>
-      </nav>
-      <nav>
-        <header class="text-[#1C1C1C] text-xl font-semibold">Help</header>
-        <a class="link link-hover text-[#494949]">FAQs</a>
-        <a class="link link-hover text-[#494949]">Contact Us</a>
-        <a class="link link-hover text-[#494949]">Terms of use</a>
+        <header class="text-[#1C1C1C] text-xl font-semibold mb-4">Quick Links</header>
+        <a class="link link-hover text-[#494949] block">Home</a>
+        <a class="link link-hover text-[#494949] block">About Us</a>
+        <a class="link link-hover text-[#494949] block">Insurance</a>
+        <a class="link link-hover text-[#494949] block">Privacy Policy</a>
       </nav>
 
+      <!-- Our Service -->
       <nav>
-        <header class="text-[#1C1C1C] text-xl font-semibold">Social</header>
-        <a class="link link-hover text-[#494949]"><i class="fa-brands fa-facebook mr-1"></i>Facebook</a>
-        <a class="link link-hover text-[#494949]"><i class="fa-brands fa-square-x-twitter mr-1"></i>Twitter</a>
-        <a class="link link-hover text-[#494949] "><i class="fa-brands fa-square-instagram mr-1"></i>Instagram</a>
+        <header class="text-[#1C1C1C] text-xl font-semibold mb-4">Our Service</header>
+        <a class="link link-hover text-[#494949] block">Life Insurance</a>
+        <a class="link link-hover text-[#494949] block">Car Insurance</a>
+        <a class="link link-hover text-[#494949] block">Health Insurance</a>
+        <a class="link link-hover text-[#494949] block">House Insurance</a>
       </nav>
-      <form>
-        <header class=" text-[#1C1C1C] text-2xl font-semibold leading-10">Subscribe to our <br>newsletter</header>
-        <fieldset class="form-control w-80">
-          <div class="join">
-            <input type="text" placeholder="Email address" class="bg-transparent border-b-2 border-[#494949]" />
-            <button class="btn ml-5 bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-full"><i
-                class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
-          </div>
-        </fieldset>
-      </form>
+
+      <!-- Help -->
+      <nav>
+        <header class="text-[#1C1C1C] text-xl font-semibold mb-4">Help</header>
+        <a class="link link-hover text-[#494949] block">FAQs</a>
+        <a class="link link-hover text-[#494949] block">Contact Us</a>
+        <a class="link link-hover text-[#494949] block">Terms of use</a>
+      </nav>
+
+      <!-- Social -->
+      <nav>
+        <header class="text-[#1C1C1C] text-xl font-semibold mb-4">Social</header>
+        <a class="link link-hover text-[#494949] block"><i class="fa-brands fa-facebook mr-1"></i>Facebook</a>
+        <a class="link link-hover text-[#494949] block"><i class="fa-brands fa-square-x-twitter mr-1"></i>Twitter</a>
+        <a class="link link-hover text-[#494949] block"><i class="fa-brands fa-square-instagram mr-1"></i>Instagram</a>
+      </nav>
+
+      <!-- Newsletter -->
+      <form class="w-full max-w-md mx-auto">
+  <header class="text-[#1C1C1C] text-2xl font-semibold leading-10 mb-4 text-center sm:text-left">
+    Subscribe to our <br class="hidden sm:block"> newsletter
+  </header>
+
+  <fieldset class="form-control w-full">
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <!-- Email Input -->
+      <input 
+        type="email" 
+        placeholder="Email address"
+        class="bg-transparent border-b-2 border-[#494949] w-full flex-1 p-3 text-base focus:outline-none focus:border-[#FF8938] transition"
+      />
+
+      <!-- Submit Button -->
+      <button 
+        type="submit"
+        class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-full px-5 py-3 text-white text-lg w-full sm:w-auto">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </fieldset>
+</form>
+
+
     </div>
 
+    <!-- Bottom -->
     <div class="mt-12">
       <p class="text-[#494949] text-center font-medium">© 2024 ab-devo.to - All rights reserved.</p>
     </div>
   </footer>
+
   <!-- footer_end -->
 </body>
 
