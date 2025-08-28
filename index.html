@@ -202,8 +202,7 @@
     <!-- great_tea_end -->
 
     <!-- customer_review_start -->
-    <section
-      class="mt-28 flex flex-col md:flex-row gap-14 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] 
+    <section class="mt-28 flex flex-col md:flex-row gap-14 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] 
              md:px-10 lg:px-[70px] pt-5 lg:pt-[110px] pb-4 md:pb-2 lg:pb-[85px] justify-between overflow-hidden">
       <div class=" px-2 lg:px-0 flex items-center">
         <div>
@@ -328,41 +327,85 @@
   <!-- main_end -->
 
   <!-- footer_start -->
-  <footer class="px-6 sm:px-10 lg:px-40 py-10 lg:py-24 bg-[#FF89381A] text-base-content">
-    <div class="max-w-7xl mx-auto">
-      <div class="footer">
-        <div>
-          <img src="./assets/images/logo.png" class="max-w-full" />
-          <p>Tea & Botanical Solutions Supplier<br />Give Optimum Satisfaction To Your Taste Buds.</p>
-          <p>Copyright © 2024 - All right reserved</p>
-        </div>
-        <div>
-          <span class="footer-title">Product</span>
-          <a class="link link-hover">Milk Tea</a>
-          <a class="link link-hover">Black Tea</a>
-          <a class="link link-hover">Lemon Tea</a>
-          <a class="link link-hover">Green Tea</a>
-        </div>
-        <div>
-          <span class="footer-title">Company</span>
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </div>
-        <div>
-          <span class="footer-title">Social</span>
-          <div class="grid grid-flow-col gap-4">
-            <a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-                <path
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.723 0-4.932 2.208-4.932 4.932 0 .386.045.762.127 1.124-4.094-.205-7.725-2.166-10.163-5.144-.424.729-.666 1.577-.666 2.476 0 1.708.87 3.215 2.188 4.099-.807-.026-1.566-.248-2.229-.616v.062c0 2.385 1.693 4.374 3.946 4.827-.413.112-.849.171-1.296.171-.317 0-.626-.031-.928-.088.627 1.956 2.444 3.379 4.6 3.419-1.68 1.318-3.808 2.104-6.115 2.104-.397 0-.788-.023-1.175-.069 2.179 1.397 4.768 2.212 7.548 2.212 9.056 0 14.01-7.506 14.01-14.01 0-.213-.005-.425-.014-.636.962-.695 1.797-1.562 2.457-2.549z">
-                </path>
-              </svg>
-            </a>
-          </div>
-        </div>
+  <footer class="px-6 sm:px-10 lg:px-40 py-10 lg:py-24 bg-[#FF89381A] text-base-content mt-28">
+
+    <!-- Top Section -->
+    <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
+      <img src="./assets/icon/cup.png" alt="" class="w-16 h-16">
+
+      <div class="text-center lg:text-left">
+        <span class="text-[#494949] text-xl font-medium block mb-4">Ready to get started?</span>
+        <button
+          class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#FFF] text-xl font-bold rounded-full px-6 py-2">
+          Get Started
+        </button>
       </div>
+    </div>
+
+    <!-- Footer Navigation -->
+    <div class="footer grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mt-20">
+
+      <!-- Quick Links -->
+      <nav>
+        <header class="text-[#1C1C1C] text-xl font-semibold mb-4">Quick Links</header>
+        <a class="link link-hover text-[#494949] block">Home</a>
+        <a class="link link-hover text-[#494949] block">About Us</a>
+        <a class="link link-hover text-[#494949] block">Insurance</a>
+        <a class="link link-hover text-[#494949] block">Privacy Policy</a>
+      </nav>
+
+      <!-- Our Service -->
+      <nav>
+        <header class="text-[#1C1C1C] text-xl font-semibold mb-4">Our Service</header>
+        <a class="link link-hover text-[#494949] block">Life Insurance</a>
+        <a class="link link-hover text-[#494949] block">Car Insurance</a>
+        <a class="link link-hover text-[#494949] block">Health Insurance</a>
+        <a class="link link-hover text-[#494949] block">House Insurance</a>
+      </nav>
+
+      <!-- Help -->
+      <nav>
+        <header class="text-[#1C1C1C] text-xl font-semibold mb-4">Help</header>
+        <a class="link link-hover text-[#494949] block">FAQs</a>
+        <a class="link link-hover text-[#494949] block">Contact Us</a>
+        <a class="link link-hover text-[#494949] block">Terms of use</a>
+      </nav>
+
+      <!-- Social -->
+      <nav>
+        <header class="text-[#1C1C1C] text-xl font-semibold mb-4">Social</header>
+        <a class="link link-hover text-[#494949] block"><i class="fa-brands fa-facebook mr-1"></i>Facebook</a>
+        <a class="link link-hover text-[#494949] block"><i class="fa-brands fa-square-x-twitter mr-1"></i>Twitter</a>
+        <a class="link link-hover text-[#494949] block"><i class="fa-brands fa-square-instagram mr-1"></i>Instagram</a>
+      </nav>
+
+      <!-- Newsletter -->
+      <form class="w-full max-w-md mx-auto">
+        <header class="text-[#1C1C1C] text-2xl font-semibold leading-10 mb-4 text-center sm:text-center">
+          Subscribe to our newsletter
+        </header>
+
+        <fieldset class="form-control w-full">
+          <div class="flex flex-col sm:flex-row items-center gap-4">
+            <!-- Email Input -->
+            <input type="email" placeholder="Email address"
+              class="bg-transparent border-b-2 border-[#494949] w-full flex-1 p-3 text-base focus:outline-none focus:border-[#FF8938] transition" />
+
+            <!-- Submit Button -->
+            <button type="submit"
+              class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-full px-5 py-3 text-white text-lg w-full sm:w-auto">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="mt-12">
+      <p class="text-[#494949] text-center font-medium">© 2024 ab-devo.to - All rights reserved.</p>
     </div>
   </footer>
   <!-- footer_end -->
